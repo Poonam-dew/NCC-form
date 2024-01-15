@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+
+<div class="header1">
+  <img src="/img/national-cadet-corps-logo.png">
+  <h1 class="heading"> NCC Registration</h1>
+   </div>
+<div class="form">
+  <div class="form_container">
+   <!--<h1 class="form_heading">Registration form</h1>-->
+    <!--section progress bar-->
+    <div class="progress_bar">
+    <div class="progress_container">
+      <!--1-->
+      <div class="step_container">
+        <div class="step_num active">
+         1
+        </div>
+        <div class="step_info">
+          <p>Step 1:</p> <span class="span_step">Personal Detail</span>
+          
+        </div>
+        
+      </div>
+            <!--2-->
+      <div class="step_container">
+        <div class="step_num">
+         2
+        </div>
+        <div class="step_info">
+          <p>Step 2: </p><span class="span_step">Other Details</span>
+          
+        </div>
+        
+      </div>
+            <!--3-->
+      <div class="step_container">
+        <div class="step_num">
+         3
+        </div>
+        <div class="step_info">
+          <p>Step 3:</p> <span class="span_step">Documents</span>
+        
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      
+ 
+    </div>
+    </div>
+    <!--progress bar ends-->
+    
+    <!--section main-->
+   <div class="stepmain stepmain_1">
+     <div class="header">
+       <h1 class="section_heading">Personal Detail</h1>
+     </div>
+     <form >
+       
+         <div>
+       <label for="fname">
+         First name<span class="required"
+         >*</span></label>
+         <input type="text"name="first_name"id="fname"required />
+         <span class="error" aria-live="polite"></span>
+         </div>
+         <div>
+       <label for="mname">
+        Middle name
+       </label>
+         <input type="text"name="middle_name"id="mname">
+         </div>
+         <div>
+       <label for="lname">
+         Last name<span class="required"
+         >*</span></label>
+         <input type="text"name="last_name"id="lname"required/>
+         <span class="error" aria-live="polite"></span>
+         </div>
+         <div>
+       <label for="mobile">
+         Mobile<span class="required"
+         >*</span></label>
+         <input type="number"name="mobile_number"id="mobile"pattern="[7-9]{1}[0-9]{9}"required/>
+         <span class="error" aria-live="polite"></span>
+         
+         </div>
+          <div>
+       <label for="email">
+         Email<span class="required"
+         >*</span></label>
+         <input type="email"name="user_email"id="email"required  data-error-message="Please enter a valid email"minlength="8"/>
+         <span class="error" aria-live="polite"></span>
+         </div>
+         <div>
+         <fieldset>
+           <legend>Gender<span class="required">*</span></legend><br/>
+           <div class="radio_btn">
+             <div class="left_radio">
+           <input type="radio"name="gender"value="Male"id="male"required/>
+           <label for="male">Male</label>
+           </div>
+           <div class="right_radio">
+            <input type="radio"name="gender"value="Female"id="female">
+           <label for="female">Female</label>
+           </div>
+           </div>
+         </fieldset>
+         </div>
+          <div>
+       <label for="dob">
+         Date of Birth<span class="required"
+         >*</span></label>
+         <input type="date"name="birth_date"id="dob"required/><span class="error" aria-live="polite"></span>
+         </div>
+         <button type="submit"class="next fbutton">Save and Next</button>
+       
+       
+     </form>
+   </div>
+    
+    <div class="stepmain stepmain_2">
+       <div class="header">
+       <h1 class="section_heading">Other Details</h1>
+       </div>
+       <form>
+         <div class="address_section">
+           <h2>Address Details</h2>
+            <div>
+       <label for="address_line1">
+         Address Line 1<span class="required"
+         >*</span></label>
+         <input type="text"name="address_line1"id="address_line1"required/><span class="error" aria-live="polite"></span>
+         </div>
+           <div>
+       <label for="address_line2">
+         Address Line 2<span class="required"
+         >*</span></label>
+         <input type="text"name="address_line2"id="address_line2"required><span class="error" aria-live="polite"></span>
+         </div>
+           <div>
+       <label for="pincode">
+          Pincode <span class="required"
+         >*</span></label>
+         <input type="number"name="pincode"id="pincode"required/><span class="error" aria-live="polite"></span>
+         </div>
+         </div>
+         <div class="medical_section">
+           <h2>Medial Details</h2>
+             <div>
+       <label for="i_mark">
+         Identification Mark
+    
+         </label>
+         <input type="text"name="identification_mark"id="i_mark"placeholder="Fill yes or no">
+         </div>
+           <div>
+       <label for="bloodgrp">
+         Blood Group
+        </label>
+         <select id="bloodgrp">
+           
+           <option value="A+">A+</option>
+           <option value="A-">A-</option>
+           <option value="B+">B+</option>
+           <option value="B-">B-</option>
+           <option value="AB+">AB+</option>
+           <option value="AB-">AB-</option>
+           <option value="A+">O+</option>
+           <option value="A+">O-</option>
+          
+          
+          
+         </select>
+         </div>
+         
+         
+         </div>
+         <div class="btn2_container">
+           <button type="button" class="go-back">Back</button>
+           <button type="submit"class="next">Next</button>
+         </div>
+         
+         
+       </form>
+     
+    </div>
+    <div class="stepmain stepmain_3">
+       <div class="header">
+       <h1 class="section_heading">Documents </h1>
+     </div>
+     <form>
+         <div>
+       <label for="photo">
+         Student's Photo<span class="required"
+         >*</span></label>
+         <input type="file"name="student_photo"id="photo"required/><span class="error" aria-live="polite"></span>
+         </div>
+         <div>
+       <label for="medical">
+         Medical Certificate<span class="required"
+         >*</span></label>
+         <input type="file"name="medical_certificate"id="medical"required/><span class="error" aria-live="polite"></span>
+         </div>
+         <div>
+       <label for="aadhar">
+         Aadhar Card<span class="required"
+         >*</span></label>
+         <input type="file"name="Aadhar_card"id="aadhar"required/><span class="error" aria-live="polite"></span>
+         </div>
+     </form>
+         <div class="btn2_container">
+           <button type="button" class="go-back">Back</button>
+           <button type="submit"class="next">Submit</button>
+     
+    </div>
+    
+    
+    
+
+  </div>
+  <div class="stepmain stepmain_4">
+    <h1 class="result">Response Submitted Successfully</h1>
+  </div>
+</div>
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>
